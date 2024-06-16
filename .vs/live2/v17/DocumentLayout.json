@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC9A9AC3-FBE4-4283-9AC2-B14F3178CDB9}|live2\\live2.csproj|c:\\users\\admin\\desktop\\internship\\programs\\live2\\live2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC9A9AC3-FBE4-4283-9AC2-B14F3178CDB9}|live2\\live2.csproj|solutionrelative:live2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC9A9AC3-FBE4-4283-9AC2-B14F3178CDB9}|live2\\live2.csproj|c:\\users\\admin\\desktop\\internship\\programs\\live2\\live2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC9A9AC3-FBE4-4283-9AC2-B14F3178CDB9}|live2\\live2.csproj|solutionrelative:live2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC9A9AC3-FBE4-4283-9AC2-B14F3178CDB9}|live2\\live2.csproj|c:\\users\\admin\\desktop\\internship\\programs\\live2\\live2\\engine\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC9A9AC3-FBE4-4283-9AC2-B14F3178CDB9}|live2\\live2.csproj|solutionrelative:live2\\engine\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC9A9AC3-FBE4-4283-9AC2-B14F3178CDB9}|live2\\live2.csproj|c:\\users\\admin\\desktop\\internship\\programs\\live2\\live2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC9A9AC3-FBE4-4283-9AC2-B14F3178CDB9}|live2\\live2.csproj|solutionrelative:live2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC9A9AC3-FBE4-4283-9AC2-B14F3178CDB9}|live2\\live2.csproj|c:\\users\\admin\\desktop\\internship\\programs\\live2\\live2\\engine\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC9A9AC3-FBE4-4283-9AC2-B14F3178CDB9}|live2\\live2.csproj|solutionrelative:live2\\engine\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\live2\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "live2\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\live2\\Form1.Designer.cs",
+              "RelativeToolTip": "live2\\Form1.Designer.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAQwKsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T07:02:41.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\live2\\Form1.cs",
+              "RelativeDocumentMoniker": "live2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\live2\\Form1.cs",
+              "RelativeToolTip": "live2\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:52:57.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\live2\\engine\\Controller.cs",
+              "RelativeDocumentMoniker": "live2\\engine\\Controller.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\live2\\engine\\Controller.cs",
+              "RelativeToolTip": "live2\\engine\\Controller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:44:46.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\live2\\engine\\Model.cs",
+              "RelativeDocumentMoniker": "live2\\engine\\Model.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\live2\\engine\\Model.cs",
+              "RelativeToolTip": "live2\\engine\\Model.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:43:49.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\live2\\Form1.cs",
+              "RelativeDocumentMoniker": "live2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Internship\\programs\\live2\\live2\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "live2\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:27:11.791Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
