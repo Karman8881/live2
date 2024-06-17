@@ -17,7 +17,58 @@ namespace live2
         private async void formStart(object sender, EventArgs e)
         {
             liveTimer.Start();
+            for (int i = 0; i < model.heigh; i++)
+            {
+                for (int j = 0; j < model.widt; j++)
+                {
+                    int n = 0;
+                    if (model.a[--i, --j] == 1)
+                    {
+                        n++;
+                    }
+                    if (model.a[--i, j] == 1)
+                    {
+                        n++;
+                    }
+                    if (model.a[--i, ++j] == 1)
+                    {
+                        n++;
+                    }
+                    if (model.a[i, --j] == 1)
+                    {
+                        n++;
+                    }
+                    if (model.a[i, ++j] == 1)
+                    {
+                        n++;
+                    }
+                    if (model.a[++i, --j] == 1)
+                    {
+                        n++;
+                    }
+                    if (model.a[++i, j] == 1)
+                    {
+                        n++;
+                    }
+                    if (model.a[++i, ++j] == 1)
+                    {
+                        n++;
+                    }
+                    if (model.a[i, j] == 0)
+                    {
+                        if (n == 3)
+                        {
+                            model.b[i, j] = 1;
+                        }
+                    }
+                    else if (model.b[i, j] == 1)
+                    {
+                        model.a[i, j] = 1;
+                    }
 
+                }
+            }
+            model.a = model.b;
         }
 
 
