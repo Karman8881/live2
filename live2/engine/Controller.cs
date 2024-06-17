@@ -8,12 +8,10 @@ namespace live2.engine
 {
     internal class Controller
     {
-        public void start()
-        {
-
-        }
+        public void start() {}
         public void clean() {}
-        public void random() { }
-        public void step() { }
+        public void random() {}
+        public void step() {}
+        private void Model() {}
     }
 }

@@ -30,25 +30,24 @@
         {
             components = new System.ComponentModel.Container();
             panel1 = new Panel();
+            size = new TextBox();
+            field = new Label();
             random = new Button();
             clean = new Button();
             stop = new Button();
             button1 = new Button();
             liveTimer = new System.Windows.Forms.Timer(components);
             pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
-            field = new Label();
-            numericUpDown1 = new NumericUpDown();
+            pole = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = SystemColors.ActiveCaption;
-            panel1.Controls.Add(numericUpDown1);
+            panel1.Controls.Add(size);
             panel1.Controls.Add(field);
             panel1.Controls.Add(random);
             panel1.Controls.Add(clean);
@@ -59,6 +58,23 @@
             panel1.Size = new Size(1167, 39);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
+            // 
+            // size
+            // 
+            size.Location = new Point(679, 8);
+            size.Name = "size";
+            size.Size = new Size(125, 27);
+            size.TabIndex = 4;
+            // 
+            // field
+            // 
+            field.AutoSize = true;
+            field.Location = new Point(409, 10);
+            field.Name = "field";
+            field.Size = new Size(273, 20);
+            field.TabIndex = 3;
+            field.Text = "Введите размер поля через пробел - ";
+            field.Click += fieldform;
             // 
             // random
             // 
@@ -116,36 +132,20 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // pole
             // 
-            textBox1.Location = new Point(255, 195);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 34);
-            textBox1.TabIndex = 2;
-            // 
-            // field
-            // 
-            field.AutoSize = true;
-            field.Location = new Point(409, 10);
-            field.Name = "field";
-            field.Size = new Size(0, 20);
-            field.TabIndex = 3;
-            field.Click += fieldform;
-            // 
-            // numericUpDown1
-            // 
-            numericUpDown1.Location = new Point(574, 8);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(150, 27);
-            numericUpDown1.TabIndex = 4;
+            pole.Location = new Point(12, 3);
+            pole.Multiline = true;
+            pole.Name = "pole";
+            pole.Size = new Size(368, 226);
+            pole.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1182, 553);
-            Controls.Add(textBox1);
+            Controls.Add(pole);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Name = "Form1";
@@ -153,7 +153,6 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,8 +166,8 @@
         private Button button1;
         private System.Windows.Forms.Timer liveTimer;
         private PictureBox pictureBox1;
-        private TextBox textBox1;
-        private NumericUpDown numericUpDown1;
+        private TextBox pole;
+        private TextBox size;
         private Label field;
     }
 }
