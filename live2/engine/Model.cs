@@ -16,6 +16,9 @@ namespace live2.engine
         private static int width;
         public int[,] a = new int[height, width];
         public int[,] b = new int[height, width];
+
+        //private Thread worker;
+        //private static volatile bool stop;
     }
 
 }

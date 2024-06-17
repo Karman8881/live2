@@ -9,6 +9,9 @@ namespace live2
         private Controller controller = new Controller();
         private Model model = new Model();
 
+        private Thread worker;
+        private static volatile bool stopr = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -17,64 +20,16 @@ namespace live2
         private async void formStart(object sender, EventArgs e)
         {
             liveTimer.Start();
-            for (int i = 0; i < model.heigh; i++)
-            {
-                for (int j = 0; j < model.widt; j++)
-                {
-                    int n = 0;
-                    if (model.a[--i, --j] == 1)
-                    {
-                        n++;
-                    }
-                    if (model.a[--i, j] == 1)
-                    {
-                        n++;
-                    }
-                    if (model.a[--i, ++j] == 1)
-                    {
-                        n++;
-                    }
-                    if (model.a[i, --j] == 1)
-                    {
-                        n++;
-                    }
-                    if (model.a[i, ++j] == 1)
-                    {
-                        n++;
-                    }
-                    if (model.a[++i, --j] == 1)
-                    {
-                        n++;
-                    }
-                    if (model.a[++i, j] == 1)
-                    {
-                        n++;
-                    }
-                    if (model.a[++i, ++j] == 1)
-                    {
-                        n++;
-                    }
-                    if (model.a[i, j] == 0)
-                    {
-                        if (n == 3)
-                        {
-                            model.b[i, j] = 1;
-                        }
-                    }
-                    else if (model.b[i, j] == 1)
-                    {
-                        model.a[i, j] = 1;
-                    }
-
-                }
-            }
-            model.a = model.b;
+            stopr = false;
+            worker = new Thread(panel1_Paint);
+            worker.Start();
         }
-
 
         private void formStop(object sender, EventArgs e)
         {
             liveTimer.Stop();
+            stopr = true;
+            worker.Join();
         }
 
         private void formClean(object sender, EventArgs e)
@@ -116,12 +71,61 @@ namespace live2
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-            for (int i = 0; i < model.heigh; i++)
+            while (!stop)
             {
-                for (int j = 0; j < model.widt; j++)
-                {
 
+                for (int i = 0; i < model.heigh; i++)
+                {
+                    for (int j = 0; j < model.widt; j++)
+                    {
+                        int n = 0;
+                        if (model.a[--i, --j] == 1)
+                        {
+                            n++;
+                        }
+                        if (model.a[--i, j] == 1)
+                        {
+                            n++;
+                        }
+                        if (model.a[--i, ++j] == 1)
+                        {
+                            n++;
+                        }
+                        if (model.a[i, --j] == 1)
+                        {
+                            n++;
+                        }
+                        if (model.a[i, ++j] == 1)
+                        {
+                            n++;
+                        }
+                        if (model.a[++i, --j] == 1)
+                        {
+                            n++;
+                        }
+                        if (model.a[++i, j] == 1)
+                        {
+                            n++;
+                        }
+                        if (model.a[++i, ++j] == 1)
+                        {
+                            n++;
+                        }
+                        if (model.a[i, j] == 0)
+                        {
+                            if (n == 3)
+                            {
+                                model.b[i, j] = 1;
+                            }
+                        }
+                        else if (model.b[i, j] == 1)
+                        {
+                            model.a[i, j] = 1;
+                        }
+
+                    }
                 }
+                model.a = model.b;
             }
         }
 
